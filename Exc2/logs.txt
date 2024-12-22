@@ -1,0 +1,7 @@
+E:\study\sprint_6\architecture-sprint-6>kubectl get hpa -w
+NAME               REFERENCE                            TARGETS                 MINPODS   MAXPODS   REPLICAS   AGE
+scaletestapp-hpa   Deployment/scaletestapp-deployment   memory: <unknown>/80%   1         10        1          42m
+scaletestapp-hpa   Deployment/scaletestapp-deployment   memory: 118%/80%        1         10        1          43m
+scaletestapp-hpa   Deployment/scaletestapp-deployment   memory: 118%/80%        1         10        2          43m
+scaletestapp-hpa   Deployment/scaletestapp-deployment   memory: 89%/80%         1         10        2          44m
+scaletestapp-hpa   Deployment/scaletestapp-deployment   memory: 89%/80%         1         10        3          44m
